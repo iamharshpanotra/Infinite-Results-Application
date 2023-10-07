@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scroll</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Infinite Scroll using Unsplash API</h1>
+    <div class="form-cont">
+        <form action="" >
+            <input type="text" name="query" placeholder="Search ...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <!-- loader -->
+    <div class="loader" id="loader" hidden>
+        <img src="loader.svg" alt="loading" srcset="" >
+    </div>
+    <!-- img cont -->
+    <div class="image-cont" id="image-cont">
+        
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

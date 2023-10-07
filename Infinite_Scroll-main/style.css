@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+h1{
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Bitter', serif;
+}
+
+/* loader */
+.loader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loader img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* img cont */
+
+.image-cont{
+  margin: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image-cont img{
+  width: 100%;
+  /* max-width: 20em; */
+  height: auto;
+  margin: 5px;
+}
+
+.image-cont img:hover{
+  transform: translateY(-0.1em);
+  box-shadow: 0 0.5em 0.5em -0.3em black ;
+
+}
+
+/* input */
+
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.form-cont{
+  display: inline-block;
+  /* margin: 3px 40%;   */
+  padding: 5px 7px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+input{
+  margin-left: 10px;
+  background: transparent;
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+input,button{
+  border: none;
+}
+
+button{
+  padding: 8px 10px;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+input:focus{
+  outline: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 30px;
+  }
+  .image-cont{
+    margin: 10px;
+  }
+}
